@@ -1,0 +1,161 @@
+
+.int-top {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.int-top ul li {
+    float: left;
+    list-style: none;
+    margin: 30px;
+    font-size: 25px;
+}
+
+.title {
+    text-align: center; line-height: 200px;
+}
+
+.container {
+    width: 1200px;
+    margin:50px auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+    height: 520px;
+}
+
+.direction {
+    width: 750px;
+    height: 100%;
+    line-height: 30px;
+}
+
+.direction h5 {
+    font-weight: bold;
+}
+
+.direction p {
+    font-size: 15px;
+}
+
+.dirIMG {
+    width: 400px;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 580px) {
+    body {
+        margin-top: 55px;
+    }
+
+    header {
+        width: 100%;
+        height: 55px;
+        padding: 0px 5%;
+        font-size: 13px;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+
+    /*footer*/
+    footer {
+        width: 100%;
+        height: 190px;
+    }
+
+    footer h3 {
+        font-size: 16px;
+    }
+    
+    footer .footer-top p {
+        line-height: 120%;
+        font-size: 10px;    
+    }
+    
+    footer .footer-top {
+        height: 190px;
+        margin: auto 20px;
+        align-content: center;
+    }
+
+    footer .footer-map {
+        display: none;
+    }
+
+    footer .footer-bottom {
+        height: 62px; 
+        width: 100%;
+    }
+    
+    footer .footer-bottom .copyright {
+        font-size: 10px;
+        margin: auto auto;
+        float: none;
+        text-align: center;
+    }
+    
+    footer .footer-bottom ul {
+        float: left;
+        margin: 0 auto;
+    }
+    
+    footer .footer-bottom ul li {
+        font-size: 10px;
+        padding: 0 10px 0 10px;
+    }
+
+    footer .footer-bottom ul li:first-child {
+        border: none;
+        padding-right: 10px;
+    }
+
+    footer .footer-bottom div {
+        display: flex;
+        justify-content: center;
+    }
+
+    section .title {
+        font-size: 22px;
+        line-height: 50px;
+    }
+
+    section .container {
+        width: 100%;
+        margin:10px auto 10px auto;
+        display: block;
+        height: 450px;
+    }
+
+    .dirIMG {
+        display: none;
+    }
+    
+    section .container .direction {
+        width: 90%;
+        height: 100%;
+        line-height: 20px;
+        margin: auto auto;
+    }
+
+    section .container .direction h5{
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    section .container .direction iframe{
+        width: 100%;
+        height: 150px;
+    }
+    
+    
+    section .container .direction p {
+        font-size: 10px;
+    }
+}

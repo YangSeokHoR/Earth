@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-5 {
+        stroke: #222;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-4 {
+        stroke: #ffdf2c;
+      }
+
+      .cls-5 {
+        stroke-width: 1.9px;
+      }
+    </style>
+  </defs>
+  <g id="_오락기" data-name="오락기">
+    <rect class="cls-2" x="22.25" y="12.49" width="55.5" height="7.24" rx="2" ry="2"/>
+    <rect class="cls-2" x="34.36" y="27.93" width="31.28" height="27.9" rx="2" ry="2"/>
+    <polyline class="cls-1" points="72.5 64.73 77.75 73.68 22.25 73.68 27.5 64.73"/>
+    <rect class="cls-1" x="22.25" y="73.68" width="55.5" height="13.91"/>
+    <path class="cls-5" d="M27.5,19.73v45h6.51c-.19-.35-.31-.75-.31-1.18,0-1.37,1.11-2.47,2.47-2.47s2.47,1.11,2.47,2.47c0,.43-.12.83-.31,1.18h34.16V19.73H27.5Z"/>
+    <line class="cls-3" x1="36.17" y1="66.02" x2="36.17" y2="69.74"/>
+    <circle class="cls-4" cx="55.02" cy="39.51" r="5.02"/>
+    <polygon class="cls-4" points="46.23 46.05 40.95 50.41 39.81 43.66 46.23 46.05"/>
+    <circle class="cls-4" cx="36.17" cy="63.55" r="2.47"/>
+    <rect class="cls-2" x="49.55" y="67.78" width="8.81" height="2.84" rx="1.42" ry="1.42"/>
+    <rect class="cls-2" x="61.63" y="67.78" width="8.81" height="2.84" rx="1.42" ry="1.42"/>
+  </g>
+</svg>

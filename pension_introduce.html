@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>머물다 키즈풀빌라</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./resource/js/reservationPopUp.js"></script>
+    <link rel="stylesheet" type="text/css" href="./resource/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./resource/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="./resource/css/style.css">
+    <link rel="stylesheet" href="./resource/css/introduce.css">
+    <script src="./resource/js/tap_menu.js"></script>
+    <script src="./resource/js/hamberger.js"></script>
+    <link rel="stylesheet" href="./resource/css/hamberger.css">
+    <link rel="stylesheet" href="./resource/css/mobile.css">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2 class="logo"><a href="index.html">머물다</a></h2>
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-btn">
+                    <a href="pension_introduce.html">머물다소개</a>
+                    <ul class="subnav">
+                        <li><a href="pension_introduce.html">펜션 소개</a></li>
+                        <li><a href="view.html">외부전경</a></li>
+                        <li><a href="direction.html">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li class="nav-btn">
+                    <a href="room.html">시설안내</a>
+                    <ul class="subnav">
+                        <li><a href="room.html">머물다 시설안내</a></li>
+                        <li><a href="gallery.html">갤러리</a></li>
+                    </ul>
+                </li>
+                <li class="nav-btn">
+                    <a href="reservation.html">예약</a>
+                    <ul class="subnav">
+                        <li><a href="reservation.html">예약안내</a></li>
+                        <li>
+                            <a href="javascript:void(0);" onclick="openPopup()">예약하기</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamberger_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <div class="fullscreen">
+        <ul>
+            <li><a href="pension_introduce.html">펜션소개</a></li>
+            <li><a href="view.html">외부전경</a></li>
+            <li><a href="direction.html">오시는길</a></li>
+            <li><a href="room.html">시설안내</a></li>
+            <li><a href="gallery.html">갤러리</a></li>
+            <li><a href="reservation.html">예약안내</a></li>
+            <li><a href="javascript:void(0);" onclick="openPopup()">예약하기</a></li>
+        </ul>
+    </div>
+    <section>
+        <div class="int-top">
+            <ul>
+                <li>
+                    <a style="font-weight: bold;">펜션소개</a>
+                </li>
+                <li>
+                    <a href="view.html">외부전경</a>
+                </li>
+                <li>
+                    <a href="direction.html">오시는길</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="introduce_section1">
+        <div id="pension_introduce_img" style="background-image: url(./resource/image/main1.jpg);">
+            <div class="overlay"></div>
+            <div class="text_wrap1">
+                <p class="p1">머물다 키즈풀빌라</p>
+                <p class="p2">팬션소개</p>
+                <p class="p3">사랑하는 사람들과 머물고 싶은곳</p>
+                <p class="p3">독채 머물다 키즈풀빌라</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="introduce_section2">
+        <div class="introduce_section2_text">
+            <div class="introduce_section2_bar"></div>
+            <p>풀빌라 층별 안내</p>
+        </div>
+        <div class="introduce_section2_contentWarp">
+            <div class="introduce_section2_content1">
+                <div class="tab_menu">
+                    <ul class="tabs">
+                        <li id="distinguish" class="tab_link current" data-tab="tab_1">1층</li>
+                        <li class="tab_link" data-tab="tab_2">2층</li>
+                    </ul>
+                    <div id="tab_1" class="tab_content current">
+                        <div class="OneF_slider" style="background-image: url(./resource/image/1F_01.jpg);"></div>
+                        <div class="OneF_slider" style="background-image: url(./resource/image/1F_02.jpg);"></div>
+                        <div class="OneF_slider" style="background-image: url(./resource/image/1F_03.jpg);"></div>
+                    </div>
+                    <div id="tab_2" class="tab_content">
+                        <div class="TwoF_slider" style="background-image: url(./resource/image/2F_01.jpg);"></div>
+                        <div class="TwoF_slider" style="background-image: url(./resource/image/2F_02.jpg);"></div>
+                        <div class="TwoF_slider" style="background-image: url(./resource/image/2F_03.jpg);"></div>
+                        <div class="TwoF_slider" style="background-image: url(./resource/image/2F_04.jpg);"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="icontab_1" class="introduce_section2_content2 current">
+                <div class="introduce_section2_icon" style="background-image: url(./resource/image/icon1_1.png);">
+                    <p>노래방</p>
+                </div>
+                <div class="introduce_section2_icon" style="background-image: url(./resource/image/icon1_2.png);">
+                    <p>식기, 조리도구</p>
+                </div>
+                <div class="introduce_section2_icon" style="background-image: url(./resource/image/icon1_3.png);">
+                    <p>압력밥솥</p>
+                </div>
+                <div class="introduce_section2_icon" style="background-image: url(./resource/image/icon1_4.png);">
+                    <p>전자레인지</p>
+                </div>
+                <div class="introduce_section2_icon" style="background-image: url(./resource/image/icon1_5.png);">
+                    <p>커피포트</p>
+                </div>
+                <div class="introduce_section2_icon" style="background-image: url(./resource/image/icon1_6.png);">
+                    <p>에어프라이기</p>
+                </div>
+                <div class="introduce_section2_icon" style="background-image: url(./resource/image/icon1_7.png);">
+                    <p>정수기</p>
+                </div>
+                <div class="introduce_section2_icon" style="background-image: url(./resource/image/icon1_8.png);">
+                    <p>젖병소독기</p>
+                </div>
+            </div>
+            <div id="icontab_2" class="introduce_section2_content2">
+                <div class="introduce_section2_icon" style="background-image: url(./resource/image/icon_TV.svg);">
+                    <p>티비</p>
+                </div>
+                <div class="introduce_section2_icon"
+                    style="background-image: url(./resource/image/icon_jungleGym.svg);">
+                    <p>정글짐</p>
+                </div>
+                <div class="introduce_section2_icon" style="background-image: url(./resource/image/icon_arcade.svg);">
+                    <p>오락기</p>
+                </div>
+                <div class="introduce_section2_icon" style="background-image: url(./resource/image/icon_dress.svg);">
+                    <p>드레스</p>
+                </div>
+                <div class="introduce_section2_icon"
+                    style="background-image: url(./resource/image/icon_dollHouse.svg);">
+                    <p>인형의집</p>
+                </div>
+                <div class="introduce_section2_icon"
+                    style="background-image: url(./resource/image/icon_kitchenToy.svg);">
+                    <p>주방놀이시설</p>
+                </div>
+                <div class="introduce_section2_icon" style="background-image: url(./resource/image/icon_terrace.svg);">
+                    <p>테라스</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="introduce_section3">
+        <div class="text_wrap2">
+            <div class="introduce_section3_1">
+                <p>객실정보</p>
+                <p>머물다 키즈풀빌라</p>
+            </div>
+            <div class="introduce_section3_textarea">
+                <p>풀빌라정보</p>
+                <p>-인원 : 기준 12명 / 최대 20명</p>
+                <p>-넓이 : 248m^2</p>
+                <p>-유형 : 키즈풀빌라 복층</p>
+                <p>-방 : 4개 (패밀리 침대방 2, 퀸 침대방 1, 온돌방)</p>
+                <p>-욕실 : 3개 (실내 화장실 1층 1개,2층 2개) / 샴푸, 린스 , 바디워시, 손세정제, 드라이기, 비데, 수건</p>
+                <p>주방 : 정수기, 커피포트, 압력밭솥, 전자레인지, 식기 및 조리도구, 젖병소독기, 에어프라이기</p>
+            </div>
+        </div>
+        <div class="introduce_section3_2">
+            <hr>
+            <button type="button" class="reservationButton" onclick="openPopup()">예약 바로가기</button>
+            <hr>
+        </div>
+    </section>
+    <section class="introduce_section4">
+        <div class="introduce_section4_text">
+            <div class="introduce_section4_circle"></div>
+            <p>사랑하는 사람들과 머물고 싶은곳</p>
+            <p>머물다 키즈풀빌라</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-text">
+                <h3>머물다</h3>
+                <p>
+                    머물다 키즈풀빌라<br><br>
+                    상호명 : 주식회사 대부도펜션플러스<br>
+                    대표자 : 신재윤<br>
+                    사업자 등록번호 : 889-87-03041<br>
+                    예약전화 : 010 – 4519 – 2520<br>
+                    주소 : 경기도 안산시 단원구 멍골2길 14-1 (대부남동)<br>
+                    계좌번호 : 3511266961173(농협은행)
+                </p>
+            </div>
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d406742.83088926267!2d125.9585417890625!3d37.207868199999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ba720e7ea3183%3A0xb15bb8d76d827c05!2z66i466y864uk7ZKA67mM6528!5e0!3m2!1sko!2skr!4v1732684593753!5m2!1sko!2skr"
+                    width="600" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>오시는 길</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">copyright 2024 Development crazy</p>
+            <div>
+                <ul>
+                    <li class="footer-btn"><a href="">이용안내</a></li>
+                    <li class="footer-btn"><a href="">개인정보처리방침</a></li>
+                    <li class="footer-btn"><a href="">통신판매업신고</a></li>
+                    <li class="footer-btn"><a href="">관리자 로그인</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script type="text/javascript">
+    $(function () {
+        $('#tab_1').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            autoplay : true,
+            autoplaySpeed : 5000,
+            fade: true,
+        });
+    })
+
+    $(function () {
+        $('#tab_2').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            autoplay : true,
+            autoplaySpeed : 5000,
+            fade: true,
+        });
+    })
+
+</script>
+
+</html>

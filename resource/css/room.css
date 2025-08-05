@@ -1,0 +1,369 @@
+header {
+    z-index: 3;
+}
+
+section {
+    margin: 100px 210px;
+}
+
+.room-top-content {
+    background-color: #ddd;
+    margin: 0;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+
+.room-top-content>div {
+    background-image: url(../image/room-top-content.jpg);
+    background-size: cover;
+    padding: 100px 210px;
+    position: relative;
+}
+
+.room-top-content > div::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 1; 
+}
+.room-top-content > div h5,
+.room-top-content > div h2,
+.room-top-content > div p {
+    position: relative; 
+    z-index: 2;
+}
+
+.room {
+    width: 100%;
+    height: 100%;
+    margin: 50px 0;
+    position: relative;
+}
+
+.pool .room-rounded-img {
+    background-image: url(../image/pool1.jpg);
+}
+
+.barbecue .room-rounded-img {
+    background-image: url(../image/barbecue1.jpg);
+}
+
+.kidsroom .room-rounded-img {
+    background-image: url(../image/kidsroom1.jpg);
+}
+
+.playground .room-rounded-img {
+    background-image: url(../image/playground1.jpg);
+}
+
+.room h4 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.room-rounded-img {
+    width: 300px;
+    height: 300px;
+    background-color: #aaa;
+    background-size: cover;
+    border-radius: 150px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.room-text-box {
+    width: calc(100% - 150px);
+    height: 300px;
+    border: #ddd 3px solid;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 150px;
+    align-content: center;
+    text-align: center;
+    z-index: 0;
+}
+
+.room-text-box .cbtn {
+    width: 100px;
+    height: 25px;
+    border-radius: 50px;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.room-popup-group {
+    display: none;
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    margin-right: 0;
+    align-content: center;
+    z-index: 9999;
+}
+
+.room-popup-img {
+    width: 80vw;
+    height: 80vh;
+}
+
+.room-mobile-slick {
+    display: none !important;
+}
+
+.room-mobile-slick div {
+    background-size: cover;
+    background-position: top bottom 0px;
+}
+
+#mask {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    zoom: 1;
+    z-index: 9998;
+}
+
+* html #mask {
+    position: absolute;
+}
+
+
+.btn_close {
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #000;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.room-popup-img div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.room-gallery-section {
+    position: relative;
+}
+
+.room-gallery-section a {
+    height: 300px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+}
+
+.room-gallery-section a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s;
+}
+
+.room-gallery-section div {
+    background-image: url(../image/room-gallery.jpg);
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    align-content: center;
+}
+
+.room-gallery-section h4 {
+    color: white;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
+@media (max-width : 580px) {
+    body {
+        margin-top: 55px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    /* --------------header-------------- */
+    header {
+        width: 100%;
+        height: 55px;
+        padding: 0px 5%;
+        font-size: 13px;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+
+    .room-section {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .room-top-content > div {
+        background-size: cover;
+        align-content: center;
+        padding: 50px;
+    }
+    .room-top-content > div {
+        word-break: keep-all;
+    }
+    .room-top-content > div > h5 {
+        font-size: 15px;
+    }
+    .room-top-content > div > h2 {
+        font-size: 20px;
+    } 
+    .room-top-content > div > p {
+        font-size: 12px;
+    } 
+
+    .room>.room-rounded-img {
+        position: static;
+        width: 100%;
+        height: 180px;
+        background-image: none;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .room-mobile-slick {
+        display: block !important;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slick-track,
+    .slick-list {
+        height: 100%;
+    }
+
+    .room-mobile-slick>div {
+        border: #ddd 2px solid;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .slick-dots li button:before {
+        font-size: 14px;
+    }
+
+    .room .slick-dots {
+        bottom: 5px;
+    }
+
+    .room-text-box {
+        position: static;
+        border-radius: 0 0 10px 10px;
+        border: #ddd 2px solid;
+        margin-top: -10px;
+        width: 100%;
+        height: 120px;
+    }
+
+    .room-text-box h4 {
+        margin-bottom: 10px;
+    }
+
+    .room-text-box p {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .room-text-box .cbtn {
+        display: none;
+    }
+
+    .room-gallery-section {
+        width: 100%;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .room-gallery-section div,
+    .room-gallery-section a {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*footer*/
+    footer {
+        width: 100%;
+        height: 190px;
+    }
+
+    footer h3 {
+        font-size: 16px;
+    }
+
+    footer .footer-top p {
+        line-height: 120%;
+        font-size: 10px;
+    }
+
+    footer .footer-top {
+        height: 190px;
+        margin: auto 20px;
+        align-content: center;
+    }
+
+    footer .footer-map {
+        display: none;
+    }
+
+    footer .footer-bottom {
+        height: 62px;
+        width: 100%;
+    }
+
+    footer .footer-bottom .copyright {
+        font-size: 10px;
+        margin: auto auto;
+        float: none;
+        text-align: center;
+    }
+
+    footer .footer-bottom ul {
+        float: left;
+        margin: 0 auto;
+    }
+
+    footer .footer-bottom ul li {
+        font-size: 10px;
+        padding: 0 10px 0 10px;
+    }
+
+    footer .footer-bottom ul li:first-child {
+        border: none;
+        padding-right: 10px;
+    }
+
+    footer .footer-bottom div {
+        display: flex;
+        justify-content: center;
+    }
+}
